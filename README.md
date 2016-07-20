@@ -1,7 +1,7 @@
 soft
 ==============
 
-soft is a LÖVE library that replaces normal variable assigning (var = value) with smooth lerping ( var:tos(value) ).
+soft is a LÖVE library that replaces normal variable assigning (var = value) with smooth lerping ( var:to(value) ).
 
 Setup
 ----------------
