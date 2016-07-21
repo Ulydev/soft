@@ -47,15 +47,15 @@ function soft:new(value)
   return _object
 end
 
-function softObject:set(value, reset)
-  if reset then self.target = value end
+function softObject:set(value, params)
+  if params and params.reset then self.target = value end
   self.value = value
   return self
 end
 
-function softObject:to(target, speed)
+function softObject:to(target, params)
   self.target = target
-  self.speed = speed or soft.speed
+  self.speed = params and params.speed or soft.speed
   return self
 end
 

@@ -50,14 +50,14 @@ variable = soft:new(value)
 
 Set variable value
 ```lua
-variable:set(value, reset) --if reset == true, variable's target will also be set to value
-v-> variable:s(value, reset)
+variable:set(value, params) --if params.reset == true, variable's target will also be set to value
+v-> variable:s(value, params)
 ```
 
 Set variable target
 ```lua
-variable:to(value, speed) --default speed = 5
-v-> variable:t(value, speed)
+variable:to(value, params) --default params.speed = 5
+v-> variable:t(value, params)
 ```
 
 Set transition speed
